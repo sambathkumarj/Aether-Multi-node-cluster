@@ -33,12 +33,12 @@ For example, something like an Intel NUC is likely more than enough to get start
 Note that Aether assumes Ubuntu Server (as opposed to Ubuntu Desktop), the main implication being that it uses systemd-networkd rather than Network Manager to manage network settings. It is possible to work around this requirement, but be aware that doing so may impact the Ansible playbook for installing SD-Core.
 OnRamp depends on Ansible, which you can install on your server as follows:
 
-  sudo apt install pipx
-  sudo apt install python3.8-venv
-  pipx install --include-deps ansible
-  pipx ensurepath
-  sudo apt-get install sshpass
-  sudo apt install ansible
+     sudo apt install pipx
+     sudo apt install python3.8-venv
+     pipx install --include-deps ansible
+     pipx ensurepath
+     sudo apt-get install sshpass
+     sudo apt install ansible
 
 Once installed, displaying the Ansible version number should result in output similar to the following:
 
