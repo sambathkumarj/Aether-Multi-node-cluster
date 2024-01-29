@@ -42,10 +42,10 @@ OnRamp depends on Ansible, which you can install on your server as follows:
 
 Once installed, displaying the Ansible version number should result in output similar to the following:
 
-  ansible --version
-  ansible-galaxy collection install kubernetes.core
+     ansible --version
+     ansible-galaxy collection install kubernetes.core
 
-aether@aether:~$ ansible --version
+     ansible --version
 
 ansible 2.10.8
   config file = None
@@ -59,8 +59,8 @@ Note that a fresh install of Ubuntu may be missing other packages that you need 
 **Download Aether OnRamp**
 
 Once ready, clone the Aether OnRamp repo on this target deployment server:
-  git clone --recursive https://github.com/opennetworkinglab/aether-onramp.git
-  cd aether-onramp
+     git clone --recursive https://github.com/opennetworkinglab/aether-onramp.git
+     cd aether-onramp
 
 **Set Target Parameters**
 
@@ -124,11 +124,11 @@ The first block identifies all the nodes; the second block designates which node
 You need to modify hosts.ini to match your target deployment. Once you’ve done that (and assuming you deleted your earlier Quick Start configuration), you can re-execute the same set of targets you ran before:
 
 **To Install K8S Cluster:**
-  make aether-k8s-install
+     make aether-k8s-install
 
 **To Install Free5gc on K8S Cluster:**
-   make aether-5gc-install
+     make aether-5gc-install
 
 **To Install AMP Portal  (Dashboard) on K8S Cluster:**
-   make aether-amp-install
+     make aether-amp-install
 
